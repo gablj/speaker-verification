@@ -54,4 +54,8 @@ Training and Testing Values at epoch $150, 000$:
 |------------|----------------|-----------|
 | 0.725      | 0.793          |  5.7 \%    |
 
+After halting the training, I ran $1,000$ test iterations on the trained model to gather concluding statistics on the final model performance. Each iteration consisted of batches of $64$ different speakers each with $10$ utterances, i.e., each batch contained $640$ utterances. The speakers included at these batches were randomly selected from the $292$ distinct speakers from the testing subset, these speakers were not present during the training of the model. For each iteration, the loss, accuracy score and equal error rate were computed. These values were then averaged to obtain the final results from this study presented in the table bellow:  
   
+|  Loss |  Accuracy | EER |
+|------------|----------------|-----------|
+| 0.048      | 0.987          | 0.5 \%    |

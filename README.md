@@ -7,6 +7,8 @@ improve the results obtained on my research, but rather to improve some minor po
 
 The inference module will get uploaded soon. 
 
+***Please note that I'm planning to write a blog/pdf guide about the fundamentals of digital signal processing and mel filterbank energies, for newcomers into the speech processing domain to have an easier time understanding the theory behind them, since, understanding some fundamental concepts of digital signal processing and speech processing can present a considerable challange to get into the deep learning domain of speech processing.***
+
 ## Description
 A repository for the source code of the end-to-end pipeline used in my Bachelor's Thesis: "Deep Learning Based End-to-End Text-Independent Speaker Verification".
 
@@ -20,8 +22,6 @@ It is worth to point that, since the audio samples from the dataset is sourced f
 
 The audiofiles are processed to obtain their mel-filerbank energies as numpy arrays of floats
 in .npy files. These mel-filterbank energies are the features fed to the deep learning model.
-
-***Please note that I'm planning to write a blog/pdf guide about the fundamentals of digital signal processing and mel filterbank energies, for newcomers into the speech processing domain to have an easier time understanding the theory behind them, since, understanding some fundamental concepts of digital signal processing and speech processing can present a considerable challange to get into the deep learning domain of speech processing.***
 
 ## About the documentation
 "Documentation is a love letter that you write to your future self." - a very wise man.

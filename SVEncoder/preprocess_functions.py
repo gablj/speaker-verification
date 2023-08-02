@@ -3,19 +3,16 @@ This module defines the functions that are used by 'data_preprocess.py'
 to preprocess the audiofiles into .npy files that contain
 the mel-filterbank energies of the waveforms.
 """
-
-import params_data
+from pathlib import Path
+from typing import Union, Optional 
 
 import numpy as np
 import librosa 
-
-from pathlib import Path
-#To type hint "Union[type1, type2]" which means that the variable can be of "type1" or "type2", 
-# "Optional[type]" is the same as "Union[type, None]"
-from typing import Union, Optional 
 import webrtcvad 
 from struct import pack #"pack()" takes non-byte values and converts them to bytes, "unpack()" converts from bytes to the specified equivalent
 from scipy.ndimage import binary_dilation
+
+import params_data
 
 def preprocess_wav(fpath_or_wav: Union[Path, str, np.ndarray],
                    source_sr: Optional[int] = None,
@@ -169,8 +166,6 @@ def wav_to_mel_spectrogram(wav: np.ndarray) -> np.ndarray:
         the elements of this matrix are the mel filterbank energies of the waveform.
         TODO: For this implementation 'n_frames=hop_length=len(wav)=int(sr * window_step / 1000)'
     """
-    #print(f"mel params: len(wav) ={len(wav)}, sr = {sr}, n_fft = int(sr * window_length / 1000) = {int(sr * window_length / 1000)}, hop_length = int(sr * window_step / 1000) = {int(sr * window_step / 1000)} ") #Added for testing, remove from final version
-    #print(f"n_frames = (len(wav)) / hop_length = {(len(wav)) / int(sr * window_step / 1000)}")    #Added for testing, remove from final version
     frames = librosa.feature.melspectrogram(y=wav,
                                              sr=params_data.sr,
                                              n_fft=int(params_data.sr * params_data.window_length / 1000),

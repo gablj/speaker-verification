@@ -202,10 +202,6 @@ class Encoder(nn.Module):
         (loss, eer) : Tuple[torch.Tensor, float]
             The loss and the EER for the batch of embeddings.
         """
-        #****Why is 'speakers_per_batch' and 'utterances_per_speaker' reassigned?, their values are originally
-        # defined at params_model, do they change at some point when computing the embeddings????
-        speakers_per_batch, utterances_per_speaker = embeddings.shape[:2]
-
         #SoftmaxLoss 
         S_matrix = self.similarity_matrix(embeddings=embeddings)
         S_matrix = S_matrix.reshape((speakers_per_batch * utterances_per_speaker, speakers_per_batch)) #Check documentation

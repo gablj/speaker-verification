@@ -26,5 +26,4 @@ This project intends to follow PEP 8 style guide for python code: https://peps.p
 
 The documentation style is mostly the same as google's python style guide: https://google.github.io/styleguide/pyguide.html .
 
-I've put extra effort into the documentation, since the speech processing part can be a bit tricky, in such a way that
-with little effort from the user, the relation and purpose between classes can be easily understood. 
+I've put extra effort into the documentation, since the speech processing part can be a bit tricky, in such a way that with little effort from the user, the relation and purpose between classes can be easily understood. 

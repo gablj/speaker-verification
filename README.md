@@ -1,7 +1,7 @@
 # This Repository is Under Construction
 Not all the source code has been uploaded, I'm currently working on modifying some aspects of the source code 
 to use it in an upcoming project. Although I've already defended my thesis (and graduated), the modifications aren't meant to
-improve the results obtained on my research, but rather to improve some minor portable features of the code. 
+improve the results obtained on my research, but rather to improve some minor portable features of the code.
 
 The inference module will get uploaded soon. 
 
@@ -21,8 +21,10 @@ in .npy files. These mel-filterbank energies are the features fed to the deep le
 
 # About the documentation
 "Documentation is a love letter that you write to your future self." - a very wise guy.
+
 This project intends to follow PEP 8 style guide for python code: https://peps.python.org/pep-0008/ .
+
 The documentation style is mostly the same as google's python style guide: https://google.github.io/styleguide/pyguide.html .
-[https://google.github.io/styleguide/pyguide.html]oinad
+
 I've put extra effort into the documentation, since the speech processing part can be a bit tricky, in such a way that
 with little effort from the user, the relation and purpose between classes can be easily understood. 

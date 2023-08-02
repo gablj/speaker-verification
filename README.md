@@ -31,15 +31,9 @@ I've put extra effort into the documentation, since the speech processing part c
 # About the trained model 
 The trained model "encoder.pt" (on /trained_models) was trained for 150,000 epochs. 
 
-  \caption{Training Values at Step $150, 000$.}
-    |Train Loss | Train Accuracy | Train EER|
-    -----------------------------------------
-    0.048 	   & 0.987 	& 0.005 =  0.5 \% \\
-    \toprule
-    Test Loss  & Test Accuracy & Test EER \\
-    \midrule
-    0.725 	   & 0.793 	& 0.057 =  5.7 \% \\	
-    \bottomrule
-    \end{tabular}%
-  \label{tab:addlabel}%
-\end{table}%
+Training Values at Step $150, 000$.
+| Train Loss | Train Accuracy | Train EER |
+|------------|----------------|-----------|
+| 0.048      | 0.987          | 0.5 \%    |
+
+  

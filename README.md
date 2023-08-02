@@ -42,7 +42,7 @@ Bellow, we present the evolution of the training curves and the values obtained 
 ![alt text](https://github.com/gablj/speaker-verification/blob/main/images/loss_plot.png)
 ![alt text](https://github.com/gablj/speaker-verification/blob/main/images/eer_plot.png)
 ![alt text](https://github.com/gablj/speaker-verification/blob/main/images/accuracy_plot.png)
-<img src="https://github.com/gablj/speaker-verification/blob/main/images/accuracy_plot.png" width="900" height="100">
+<img src="https://github.com/gablj/speaker-verification/blob/main/images/accuracy_plot.png" width="900" height="200">
 
 
 Training Values at epoch $150, 000$.

@@ -19,7 +19,7 @@ It is worth to point that, since the audio samples from the dataset is sourced f
 The audiofiles are processed to obtain their mel-filerbank energies as numpy arrays of floats
 in .npy files. These mel-filterbank energies are the features fed to the deep learning model.
 
-***Please note that I'm planning to write a blog/pdf guide about the fundamental of digital signal processing and mel filterbank energies, for newcomers into the speech processing domain to have an easier time understanding the theory behind them, since, understanding some fundamental concepts of digital signal processing and speech processing can be a big challange to get into the deep learning domain of speech processing.***
+***Please note that I'm planning to write a blog/pdf guide about the fundamentals of digital signal processing and mel filterbank energies, for newcomers into the speech processing domain to have an easier time understanding the theory behind them, since, understanding some fundamental concepts of digital signal processing and speech processing can present a considerable challange to get into the deep learning domain of speech processing.***
 
 ## About the documentation
 "Documentation is a love letter that you write to your future self." - a very wise man.

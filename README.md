@@ -1,5 +1,7 @@
 ## This Repository is Under Construction
-Not all the source code has been uploaded, I'm currently working on modifying some aspects of the source code 
+Not all the source code has been uploaded, however, feel free to review the avialable code (which represents almost 90% of the backend), and please read the section *"About the trained model and results"* to gain insight into the capabilities of this project.  
+
+I'm currently working on modifying some aspects of the source code 
 to use it in an upcoming project. Although I've already defended my thesis (and graduated), the modifications aren't meant to
 improve the results obtained on my research, but rather to improve some minor portable features of the code.
 

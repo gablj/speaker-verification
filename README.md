@@ -86,7 +86,7 @@ and a similarity matrix for a batch of $64$ different speakers (who were not pre
 
 <img src="https://github.com/gablj/speaker-verification/blob/main/images/sim_mat_embed_proj_64speakers.png" width="whatever" height="whatever"> 
 
-##### About the Equal Error Rate (EER) metric 
+## About the Equal Error Rate (EER) metric 
 The *Equal Error Rate (EER)*: Provides a measure of the point at which the false acceptance rate (FAR) and and false rejection rate (FRR) are equal. FAR represents the rate of incorrectly accepting impostors as genuine speakers, indicating the probability of a false match or false positive. FRR denotes the rate of incorrectly rejecting genuine speakers as impostors, indicating the probability of a false non-match or false negative. Conceptually, the EER represents the threshold at which the system makes an equal number of false acceptances and false rejections. 
 
 Mathematically, the EER is determined by finding the point on the Receiver Operating Characteristic (ROC) curve where the FAR and FRR intersect. The EER is the value where FAR equals FRR.

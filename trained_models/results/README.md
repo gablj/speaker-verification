@@ -6,5 +6,6 @@ The format of the content of these files is as follows:
 
 For the "training.json" file:
 {"epoch_number": {"loss": x.xxxxxx, "eer": x.xxxxxx, "accuracy": x.xxxxxx}, ..., "epoch_number": {"loss": x.xxxxxx, "eer": x.xxxxxx, "accuracy": x.xxxxxx}}
+
 For the "testing.json" file:
 {"epoch_number": {"loss_test": x.xxxxxx, "eer_test": x.xxxxxx, "test_accuracy": x.xxxxxx}, ..., "epoch_number": {"loss_test": x.xxxxxx, "eer_test": x.xxxxxx, "test_accuracy": x.xxxxxx}}.

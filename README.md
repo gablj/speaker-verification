@@ -20,10 +20,29 @@ The audiofiles are processed to obtain their mel-filerbank energies as numpy arr
 in .npy files. These mel-filterbank energies are the features fed to the deep learning model.
 
 # About the documentation
-"Documentation is a love letter that you write to your future self." - a very wise guy.
+"Documentation is a love letter that you write to your future self." - a very wise man.
 
 This project intends to follow PEP 8 style guide for python code: https://peps.python.org/pep-0008/ .
 
 The documentation style is mostly the same as google's python style guide: https://google.github.io/styleguide/pyguide.html .
 
 I've put extra effort into the documentation, since the speech processing part can be a bit tricky, in such a way that with little effort from the user, the relation and purpose between classes can be easily understood. 
+
+# About the trained model 
+The trained model "encoder.pt" (on /trained_models) was trained for 150,000 epochs. 
+\begin{table}[htbp]
+  \centering
+  \caption{Training Values at Step $150, 000$.}
+    \begin{tabular}{ccc}
+    \toprule
+    Train Loss  & Train Accuracy & Train EER \\
+    \midrule
+    0.048 	   & 0.987 	& 0.005 =  0.5 \% \\
+    \toprule
+    Test Loss  & Test Accuracy & Test EER \\
+    \midrule
+    0.725 	   & 0.793 	& 0.057 =  5.7 \% \\	
+    \bottomrule
+    \end{tabular}%
+  \label{tab:addlabel}%
+\end{table}%

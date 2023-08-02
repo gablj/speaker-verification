@@ -85,3 +85,13 @@ Also, a similarity matrix for a batch of $10$ different speakers (who were not p
 and a similarity matrix for a batch of $64$ different speakers (who were not present during the training), with $10$ utterances per speaker is shown bellow 
 
 <img src="https://github.com/gablj/speaker-verification/blob/main/images/sim_mat_embed_proj_64speakers.png" width="whatever" height="whatever"> 
+
+##### About the Equal Error Rate (EER) metric 
+The *Equal Error Rate (EER)*: Provides a measure of the point at which the false acceptance rate (FAR) and and false rejection rate (FRR) are equal. FAR represents the rate of incorrectly accepting impostors as genuine speakers, indicating the probability of a false match or false positive. FRR denotes the rate of incorrectly rejecting genuine speakers as impostors, indicating the probability of a false non-match or false negative. Conceptually, the EER represents the threshold at which the system makes an equal number of false acceptances and false rejections. 
+
+Mathematically, the EER is determined by finding the point on the Receiver Operating Characteristic (ROC) curve where the FAR and FRR intersect. The EER is the value where FAR equals FRR.
+For our implementation, at each iteration we calculated the ROC curve to obtain the False Positive Rates (FPR) and True Positive Rates (TPR), we then used the Brent's root-finding algorithm \cite{brent} implementation from 'scipy' to find the root of a lambda function that calculates the difference between FPR and $1$ - TPR (which is FRR) at a given $x: x \in [0, 1]$. This root represents the threshold at which the FPR and FRR ($1$ - TPR) are equal, giving the EER value. 
+
+In practical terms, a lower EER indicates a more accurate system, meaning that the likelihood of incorrectly accepting impostors as genuine and incorrectly rejecting genuine instances is low.  
+
+Is worth pointing out that, while EER provides an important evaluation metric for speaker verification systems, it is not typically considered a general-purpose metric used in a wide range of deep learning tasks. It is mostly used in the domain of biometric security systems, such as face recognition, hand geometry and speaker verification.

@@ -28,7 +28,7 @@ The documentation style is mostly the same as google's python style guide: https
 
 I've put extra effort into the documentation, since the speech processing part can be a bit tricky, in such a way that with little effort from the user, the relation and purpose between classes can be easily understood. 
 
-# About the trained model results
+# About the trained model and results
 The model ("encoder.pt" on /trained_models) was trained for $150 K$ epochs, the accuracy score, loss and equal error rate were tracked for both the training and testing sets throughout the training process. In addition to this, the use of the Uniform Manifold Approximation and Projection (UMAP) technique was incorporated, which is a dimensionality reduction technique that aims to capture the underlying structure and relationships in the data by mapping it to a lower-dimensional space. UMAP was implemented to periodically (every $100$ epochs) project a batch of $64$-dimensional embeddings into two-dimensional space to monitor how the model clusters speakers and to further contextualize the results, since, as the model's training and test losses decrease, it is expected that this would be reflected in the embedding space, as suggested by the GE2E loss [1]. Meaning that, is anticipated the formation of tight clusters of utterance embeddings from the same speaker as the training evolves, it is also expected to find a certain degree of separation between different clusters. The projections through UMAP provides a contextual understanding of the model's performance. We present some of these projections, for different epochs, where this behavior is presented:
 
 ![alt text](https://github.com/gablj/speaker-verification/blob/main/images/umap_projections.png)
@@ -73,3 +73,11 @@ The two-dimensional embedding space projection provides visualization of the mod
 <img src="https://github.com/gablj/speaker-verification/blob/main/images/sim_mat_embed_proj_8.png" width="whatever" height="whatever">
 <img src="https://github.com/gablj/speaker-verification/blob/main/images/sim_mat_embed_proj_7.png" width="whatever" height="whatever">
 <img src="https://github.com/gablj/speaker-verification/blob/main/images/sim_mat_embed_proj_1.png" width="whatever" height="whatever">
+
+Also, a similarity matrix for a batch of $10$ different speakers (who were not present during the training), with $10$ utterances per speaker is shown bellow
+
+<img src="https://github.com/gablj/speaker-verification/blob/main/images/sim_mat_embed_proj_10speakers.png" width="whatever" height="whatever">
+
+and a similarity matrix for a batch of $64$ different speakers (who were not present during the training), with $10$ utterances per speaker is shown bellow 
+
+<img src="https://github.com/gablj/speaker-verification/blob/main/images/sim_mat_embed_proj_64speakers.png" width="whatever" height="whatever"> 

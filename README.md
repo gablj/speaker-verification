@@ -30,13 +30,10 @@ I've put extra effort into the documentation, since the speech processing part c
 
 # About the trained model 
 The trained model "encoder.pt" (on /trained_models) was trained for 150,000 epochs. 
-\begin{table}[htbp]
-  \centering
+
   \caption{Training Values at Step $150, 000$.}
-    \begin{tabular}{ccc}
-    \toprule
-    Train Loss  & Train Accuracy & Train EER \\
-    \midrule
+    |Train Loss | Train Accuracy | Train EER|
+    -----------------------------------------
     0.048 	   & 0.987 	& 0.005 =  0.5 \% \\
     \toprule
     Test Loss  & Test Accuracy & Test EER \\

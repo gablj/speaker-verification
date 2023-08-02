@@ -4,7 +4,7 @@ import random
 
 def train_test_split(root_dir: str, dir_train: str, dir_test: str, train_split: float = 0.75) -> None:
     """
-    Splits the previously preprocessed data (see 'data_preprocess.py') mel-filterbank energies
+    Splits the previously preprocessed data (see 'preprocess_data.py') mel-filterbank energies
     numpy arrays of floats into train and test directories, which contain subdirectories 
     for each speaker. In addition, each speaker subdirectory has a txt file 'frames.txt'
     that has a list of all the mel-filterbank energies numpy arrays names from the 

@@ -33,6 +33,18 @@ The model ("encoder.pt" on /trained_models) was trained for $150 K$ epochs, the 
 
 ![alt text](https://github.com/gablj/speaker-verification/blob/main/images/umap_projections.png)
 
+As can be observed in the figure above, the initial $100$ steps show the training embedding space as highly unclustered. The embeddings corresponding to the same speaker are scattered and mixed with others. This pattern continued for roughly the first $1,000$ epochs from which after clusters start to become noticeable. By epoch $10,000$, embeddings of the same speaker are closer, but intersections with embeddings from different speakers are still very prominent.  At epoch $50, 000$ most of the same-speaker embeddings have significantly move closer to each other, although some remain distant or intersect with different clusters. Step $100,000$ reveals that tight clusters have been already formed, however, some of these clusters remain close to each other. At this point, the model learned to produce same-speaker embeddings that are close to each other, however, I continue the training process, allowing the model to further optimize the distance between different speakers clusters. Finally, by epoch $150, 000$ the embedding space projection shows that the distance between clusters has significantly increased.
+
+I halted the training at $150 K$ steps since the model had converged by this point. The learning curves had flattened, showing no significant improvements. The loss values for the training set were already very low, fluctuating around $0.05$. The training accuracy value stabilized at approximately $0.97$ and the equal error rate remained bellow $1 \%$.
+All of these are indicators that the model has converged. To continue the training further would yield no significant improvements.
+Bellow, we present the evolution of the training curves and the values obtained from the training at epoch $150, 000$.
+
+![alt text](https://github.com/gablj/speaker-verification/blob/main/images/loss_plot.png)
+![alt text](https://github.com/gablj/speaker-verification/blob/main/images/eer_plot.png)
+![alt text](https://github.com/gablj/speaker-verification/blob/main/images/accuracy_plot.png)
+<img src="https://github.com/gablj/speaker-verification/blob/main/images/accuracy_plot.png" width="500" height="500">
+
+
 Training Values at epoch $150, 000$.
 | Train Loss | Train Accuracy | Train EER |
 |------------|----------------|-----------|

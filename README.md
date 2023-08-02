@@ -8,7 +8,7 @@ The inference module will get uploaded soon.
 ## Description
 A repository for the source code of the end-to-end pipeline used in my Bachelor's Thesis: "Deep Learning Based End-to-End Text-Independent Speaker Verification".
 
-This is a modified implementation of an end-to-end architecture described in google's paper "GENERALIZED END-TO-END LOSS FOR SPEAKER VERIFICATION" - https://arxiv.org/pdf/1710.10467.pdf [1] . 
+This is a modified implementation of an end-to-end architecture described in google's paper "Generalized End-to-End Loss for Speaker Verification" - https://arxiv.org/pdf/1710.10467.pdf [1] . 
 
 The model was trained using the audiofiles from the 'LibriSpeech ASR corpus' 'other-500', dataset source: http://www.openslr.org/12, which consists of audio samples
 featuring read english speech. The "train-other-500" subset has a size of 30 GB and a total duration of ∼ 500 hours of recorded audio samples, from 1, 166 speakers,

@@ -1,4 +1,11 @@
-# speaker-verification
+# This repository is under construction
+Not all the source code has been uploaded, I'm currently working on modifying some aspects of the source code 
+to use it in an upcoming project. Although I've already defended my thesis (and graduated), the modifications aren't meant to
+improve the results obtained on my research, but rather to improve some minor portable features of the code. 
+
+The inference module will get uploaded soon. 
+
+# Description
 A repository for the source code of my Bachelor Thesis: "Deep Learning Based End-to-End Text-Independent Speaker Verification".
 
 This is a modified implementation of an end-to-end architecture described in google's paper "GENERALIZED END-TO-END LOSS FOR SPEAKER VERIFICATION" - https://arxiv.org/pdf/1710.10467.pdf [1] . 

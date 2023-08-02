@@ -16,7 +16,7 @@ import params_data
 class Encoder(nn.Module):
     """
     Speaker Encoder class.
-    This class implements a speaker enconder as described in google's paper [1], 
+    This class implements a speaker encoder as described in google's paper [1], 
     some modifications are made to tailor the encoder to this project's 
     goal, please refer to my bachelor's thesis .pdf for further details. 
 

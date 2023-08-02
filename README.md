@@ -58,4 +58,4 @@ After halting the training, I ran $1,000$ test iterations on the trained model t
   
 |  Loss |  Accuracy | EER |
 |------------|----------------|-----------|
-| 0.048      | 0.987          | 0.5 \%    |
+| 0.723      | 0.790          | 5.5 \%   |

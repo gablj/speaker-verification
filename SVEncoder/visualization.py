@@ -2,7 +2,8 @@
 This module provides a class for generating and updating visualizations using
 Visdom https://github.com/fossasia/visdom, for monitoring and analyzing 
 real-time training and testing data progress.
-Visdom facilitates the visualization of (remote) data with an emphasis on supporting scientific experimentation,
+Visdom facilitates the visualization of (remote) data with an emphasis
+on supporting scientific experimentation,
 it supports Torch and Numpy. 
 """
 

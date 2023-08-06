@@ -80,14 +80,14 @@ def train(run_id: str, loss_method: str, preprocessed_data_train_path: Path,
     loader = SpeakerDataLoader(dataset=dataset,
                           speakers_per_batch=params_model.speakers_per_batch,
                           utterances_per_speaker=params_model.utterances_per_speaker,
-                          num_workers=num_workers-4)
+                          num_workers=num_workers - num_workers//2)
     
     #Inititate test dataset and dataloader
     dataset_test = SpeakerDataset(preprocessed_data_test_path)
     loader_test = SpeakerDataLoader(dataset=dataset_test, 
                                speakers_per_batch=params_model.speakers_per_test_batch,
                                utterances_per_speaker=params_model.utterances_per_test_speaker,
-                               num_workers=4)
+                               num_workers=num_workers//2)
     iterloader_test = iter(loader_test) 
     
     

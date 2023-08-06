@@ -64,11 +64,11 @@ class Speaker:
             repeatedly sample 'Utterance' instances in a way that guarantees each instance is sampled 
             a certain number of times while preserving randomness.
         """ 
-        with self.root.joinpath("_frames.txt").open("r") as sources_file:
+        with self.root_dir.joinpath("_frames.txt").open("r") as sources_file:
             #a list of tuples where each element is a list of the form [npy_file_name, target_speaker]
             sources = [line.split(",") for line in sources_file]
         sources ={frames_fname: target for frames_fname, target in sources}
-        self.utterances = [Utterance(frames_fpath=self.root.joinpath(frames_fname), target_speaker=int(target) ) for frames_fname, target in sources.items()]
+        self.utterances = [Utterance(frames_fpath=self.root_dir.joinpath(frames_fname), target_speaker=int(target) ) for frames_fname, target in sources.items()]
         self.utterance_cycler = RandomCycler(self.utterances) 
 
     def random_partial_segment(self, count: int, n_frames: int) -> List[Tuple[Utterance, np.ndarray, Tuple[int, int]]]:

@@ -21,9 +21,9 @@ from tqdm import tqdm
 
 import numpy as np 
 
-from svencoder import params_data
-from svencoder import preprocess_functions
-from svencoder.data_log import DataLog
+from sencoder import params_data
+from sencoder import preprocess_functions
+from sencoder.data_log import DataLog
 
 _AUDIO_EXTENSIONS = ("wav", "flac", "m4a", "mp3") 
 

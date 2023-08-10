@@ -12,7 +12,7 @@ import webrtcvad
 from struct import pack #"pack()" takes non-byte values and converts them to bytes, "unpack()" converts from bytes to the specified equivalent
 from scipy.ndimage import binary_dilation
 
-import params_data
+from SVEncoder import params_data
 
 def preprocess_wav(fpath_or_wav: Union[Path, str, np.ndarray],
                    source_sr: Optional[int] = None,
@@ -35,7 +35,7 @@ def preprocess_wav(fpath_or_wav: Union[Path, str, np.ndarray],
         If "True" normalizes the signals amplitud relative to
         how far bellow is from its peak amplitude. 
     trim_silece : bool, optional, default = True
-        If "True" trims long silences from the waveform. 
+        If "True", trim long silences from the waveform. 
 
     Returns
     -------

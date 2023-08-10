@@ -1,5 +1,5 @@
 """
-This module defines the functions that are used by 'data_preprocess.py' 
+This module defines the functions that are used by 'preprocess_data.py' 
 to preprocess the audiofiles into .npy files that contain
 the mel-filterbank energies of the waveforms.
 """

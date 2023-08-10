@@ -4,7 +4,7 @@ from datetime import datetime
 
 import numpy as np 
 
-import params_data
+from svencoder import params_data
 
 class DataLog:
     """

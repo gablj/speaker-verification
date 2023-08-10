@@ -12,7 +12,7 @@ import webrtcvad
 from struct import pack #"pack()" takes non-byte values and converts them to bytes, "unpack()" converts from bytes to the specified equivalent
 from scipy.ndimage import binary_dilation
 
-from SVEncoder import params_data
+from svencoder import params_data
 
 def preprocess_wav(fpath_or_wav: Union[Path, str, np.ndarray],
                    source_sr: Optional[int] = None,
